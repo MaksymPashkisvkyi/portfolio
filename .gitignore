@@ -3,7 +3,7 @@
 *.pot
 *.pyc
 __pycache__
-db.sqlite3
+src/db.sqlite3
 media
 
 # Backup files #
@@ -137,4 +137,4 @@ GitHub.sublime-settings
 !.vscode/extensions.json
 .history
 
-/staticfiles/
+/src/staticfiles/
