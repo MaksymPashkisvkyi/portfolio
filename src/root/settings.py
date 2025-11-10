@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'adminlte4',
+    'adminlte4_theme',
     'landing.apps.LandingConfig',
     'django.contrib.admin',
     'django.contrib.auth',
