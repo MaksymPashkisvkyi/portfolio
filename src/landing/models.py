@@ -12,6 +12,7 @@ class PortfolioItem(models.Model):
     alt_text = models.TextField(blank=True, null=True, verbose_name="Альтернативний текст")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Оновлено")
+    portfolio_modal_id = models.TextField(verbose_name="Ідентифікатор модального вікна")
     is_published = models.BooleanField(default=False, verbose_name="Опубліковано")
 
     def __str__(self):
