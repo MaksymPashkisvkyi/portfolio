@@ -6,6 +6,7 @@ class PortfolioItem(models.Model):
     category = models.ForeignKey('PortfolioCategory', on_delete=models.PROTECT, verbose_name='Категорія')
     client = models.CharField(max_length=100, blank=True, null=True, verbose_name="Клієнт")
     description = models.TextField(blank=True, null=True, verbose_name="Опис")
+    short_description = models.TextField(blank=True, null=True, verbose_name="Короткий опис")
     source = models.URLField(blank=True, null=True, verbose_name="Посилання")
     image = models.ImageField(upload_to='my_images/', verbose_name="Зображення")
     alt_text = models.TextField(blank=True, null=True, verbose_name="Альтернативний текст")
