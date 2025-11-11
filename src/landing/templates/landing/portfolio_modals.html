@@ -29,6 +29,12 @@
                                     <strong>Category:</strong>
                                     {{ portfolio_item.category }} test
                                 </li>
+                                {% if portfolio_item.source %}
+                                <li>
+                                    <strong>Source:</strong>
+                                    <a href="{{ portfolio_item.source }}" target="_blank">{{ portfolio_item.source }}</a>
+                                </li>
+                                {% endif %}
                             </ul>
                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                 <i class="fas fa-xmark me-1"></i>
